@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+    @media (max-width: 600px) {
+
+    }
+
+    @include respond-phone {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-size: 16px;
+}
+
+// Navbar CSS starts here 
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 40vh;
+    background: linear-gradient(to right, #ff2119, #f01c14);
+
+    // Sticky class to make the bottom nav sticky
+    .sticky {
+        position: fixed;
+        width: 100%;
+        background: linear-gradient(to right, #ff2119, #f01c14);
+    }
+
+    .top {
+        height: 20vh;
+        justify-self: center;
+        padding: 1rem;
+
+        #logo {
+            cursor: pointer;
+        }
+    }
+
+    .bottom {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        justify-self: center;
+
+        .bottom-item__one {
+
+            ul {
+                display: flex;
+
+                li {
+                    display: inline-block;
+                    list-style: none;
+                    margin: 2rem;
+        
+                    .nav-item {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 4rem;
+                        width: 7rem;
+        
+                        .nav-img {
+                            cursor: pointer;
+                            height: 3.5rem;
+                            border: solid #fff;
+                            border-radius: 10px;
+                            background: linear-gradient(to right, #fff, #fff);
+                            margin-right: 10px;
+
+                            &:hover {
+                                background: linear-gradient(#ece7e7, #d1d0d0);
+                                transition: 0.7s;
+                            }
+                        }
+        
+                        a {
+                            font-family: Akaya Telivigala, 'Courier New', Courier, monospace;
+                            font-size: 1.6rem;
+                            text-decoration: none;
+                            color: #fdfdfd;
+
+                            &:hover {
+                                color: #dbdbdb;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .bottom-item__two {
+            display: grid;
+            place-items: center;
+            justify-self: end;
+
+            .nav-img {
+                cursor: pointer;
+                height: 2rem;
+                padding: 3px;
+                border: solid #fff;
+                border-radius: 10px;
+                background: linear-gradient(to right, #fff, #fff);
+                margin-right: 10px;
+
+                &:hover {
+                    background: linear-gradient(#ece7e7, #d1d0d0);
+                    transition: 0.7s;
+                }
+            }
+        }
+    }
+}
+// Navbar CSS ends here
+
+
+// Search bar CSS starts here 
+
+.search-area {
+    display: none;
+    border: solid #000;
+    height: 10vh;
+    width: 100%;
+
+    .input-area {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        font-size: 1.5rem;
+        outline: none;
+    }
+}
+
+// Search bar CSS ends here
+
+.item-one {
+    background: linear-gradient(#16bdff, #00ccff);
+    height: 100vh;
+}
+
+.item-two {
+    background: linear-gradient(#0ed4a3, #00ff37);
+    height: 100vh;
+}
+
+
+
+
+
+
+// Media Queries Manager
+/*
+0 - 600px: Phone
+600px - 900px Tablet potrait
+900px - 1200px: Tablet landscape
+[1200px - 1800px]: normal style
+1800px+: Big desktop
+*/
+
+@mixin respond-phone {
+    @media (max-width: 600px) { @content };
+}

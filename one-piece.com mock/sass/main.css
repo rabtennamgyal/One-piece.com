@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+}
+
+.navbar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  height: 40vh;
+  background: -webkit-gradient(linear, left top, right top, from(#ff2119), to(#f01c14));
+  background: linear-gradient(to right, #ff2119, #f01c14);
+}
+
+.navbar .sticky {
+  position: fixed;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ff2119), to(#f01c14));
+  background: linear-gradient(to right, #ff2119, #f01c14);
+}
+
+.navbar .top {
+  height: 20vh;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 1rem;
+}
+
+.navbar .top #logo {
+  cursor: pointer;
+}
+
+.navbar .bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.navbar .bottom .bottom-item__one ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .bottom .bottom-item__one ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 2rem;
+}
+
+.navbar .bottom .bottom-item__one ul li .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  width: 7rem;
+}
+
+.navbar .bottom .bottom-item__one ul li .nav-item .nav-img {
+  cursor: pointer;
+  height: 3.5rem;
+  border: solid #fff;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(to right, #fff, #fff);
+  margin-right: 10px;
+}
+
+.navbar .bottom .bottom-item__one ul li .nav-item .nav-img:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece7e7), to(#d1d0d0));
+  background: linear-gradient(#ece7e7, #d1d0d0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.navbar .bottom .bottom-item__one ul li .nav-item a {
+  font-family: Akaya Telivigala, 'Courier New', Courier, monospace;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fdfdfd;
+}
+
+.navbar .bottom .bottom-item__one ul li .nav-item a:hover {
+  color: #dbdbdb;
+}
+
+.navbar .bottom .bottom-item__two {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.navbar .bottom .bottom-item__two .nav-img {
+  cursor: pointer;
+  height: 2rem;
+  padding: 3px;
+  border: solid #fff;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#fff));
+  background: linear-gradient(to right, #fff, #fff);
+  margin-right: 10px;
+}
+
+.navbar .bottom .bottom-item__two .nav-img:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ece7e7), to(#d1d0d0));
+  background: linear-gradient(#ece7e7, #d1d0d0);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.search-area {
+  display: none;
+  border: solid #000;
+  height: 10vh;
+  width: 100%;
+}
+
+.search-area .input-area {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  outline: none;
+}
+
+.item-one {
+  background: -webkit-gradient(linear, left top, left bottom, from(#16bdff), to(#00ccff));
+  background: linear-gradient(#16bdff, #00ccff);
+  height: 100vh;
+}
+
+.item-two {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0ed4a3), to(#00ff37));
+  background: linear-gradient(#0ed4a3, #00ff37);
+  height: 100vh;
+}
+/*# sourceMappingURL=main.css.map */
